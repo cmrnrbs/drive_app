@@ -154,43 +154,51 @@ class _LoginScreenState extends State<LoginScreen> {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: 50,
-                ),
-                Center(
-                    child: Text('Use Social Login',
-                        style: TextStyle(
-                            fontFamily: 'GilroyRegular',
-                            fontSize: 14,
-                            color: footerText))),
-                SizedBox(
-                  height: 40,
-                ),
-                Center(
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.6,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        SvgPicture.asset(imagePath + 'instagram_alt.svg'),
-                        SvgPicture.asset(imagePath + 'twitter_alt.svg'),
-                        SvgPicture.asset(imagePath + 'facebook_alt.svg'),
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 40,
-                ),
-                Center(
-                    child: Text('Create an account',
-                        style: TextStyle(
-                            fontFamily: 'GilroyRegular',
-                            fontSize: 16,
-                            color: footerText))),
               ],
             ),
           ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 60.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Center(
+                      child: Text('Use Social Login',
+                          style: TextStyle(
+                              fontFamily: 'GilroyRegular',
+                              fontSize: 14,
+                              color: footerText))),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Center(
+                    child: Container(
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SvgPicture.asset(imagePath + 'instagram_alt.svg'),
+                          SvgPicture.asset(imagePath + 'twitter_alt.svg'),
+                          SvgPicture.asset(imagePath + 'facebook_alt.svg'),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Center(
+                      child: Text('Create an account',
+                          style: TextStyle(
+                              fontFamily: 'GilroyRegular',
+                              fontSize: 16,
+                              color: footerText))),
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );

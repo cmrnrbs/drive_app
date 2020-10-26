@@ -82,8 +82,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     // TODO: implement initState
     super.initState();
 
-    animationController = AnimationController(
-        vsync: this, duration: const Duration(milliseconds: 300));
+    animationController =
+        AnimationController(vsync:this,duration: const Duration(milliseconds: 300));
     animation = Tween<double>(
             begin: -1 * MediaQuery.of(widget.mycontext).size.width, end: 0)
         .animate(animationController)
